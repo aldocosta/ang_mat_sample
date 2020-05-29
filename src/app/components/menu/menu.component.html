@@ -1,0 +1,21 @@
+<!-- <ul>
+    <li>        
+        <a [routerLink]="['/home']">Home</a>
+    </li>
+    <li>
+        <a [routerLink]="['/cad']">Cadastro</a>        
+    </li>
+</ul> -->
+
+
+<button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+    <a [routerLink]="['/home']">Home</a>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Cadastro</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+    <a [routerLink]="['/cad']">Cadastro</a>  
+</mat-menu>
+
+
